@@ -1,0 +1,19 @@
+
+#category div{
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 0px;
+}
+.pagination>.active>a{
+    background-color: #3c3c3c;
+    border-color: #3c3c3c;
+}
+
+.pagination>.active>a:hover{
+    color: #3c3c3c;
+    background-color: white;
+    cursor: pointer;
+}
+#status:hover{
+    color: greenyellow;
+}
