@@ -39,16 +39,16 @@ class Task
 
         $i=0;
         while ($row = $result->fetch_assoc()){
-            $filmList[$i]['id_task'] = $row['id_task'];
-            $filmList[$i]['name'] = $row['name'];
-            $filmList[$i]['email'] = $row['email'];
-            $filmList[$i]['text_task'] = $row['text_task'];
-            $filmList[$i]['status'] = $row['status'];
-            $filmList[$i]['edit'] = $row['edit'];
+            $TaskList[$i]['id_task'] = $row['id_task'];
+            $TaskList[$i]['name'] = $row['name'];
+            $TaskList[$i]['email'] = $row['email'];
+            $TaskList[$i]['text_task'] = $row['text_task'];
+            $TaskList[$i]['status'] = $row['status'];
+            $TaskList[$i]['edit'] = $row['edit'];
             $i++;
         }
 
-        return $filmList;
+        return $TaskList;
     }
     public static function getTaskById($id_task){
         $id_task = intval($id_task);
