@@ -33,7 +33,7 @@ class Task
         $page = intval($page);
         $offset = ($page -1)*3;
 
-        $filmList = array();
+        $TaskList = array();
 
         $result = $db->query("SELECT * FROM `task` ORDER BY `".$sorting."` ".$method." LIMIT 3 OFFSET ". $offset);
 
